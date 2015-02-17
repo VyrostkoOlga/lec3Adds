@@ -1,0 +1,119 @@
+2015-02-16 21:44:15,411 INFO [org.springframework.web.context.ContextLoader] - <Root WebApplicationContext: initialization started>
+2015-02-16 21:44:15,663 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - <Refreshing Root WebApplicationContext: startup date [Mon Feb 16 21:44:15 PST 2015]; root of context hierarchy>
+2015-02-16 21:44:15,836 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from ServletContext resource [/WEB-INF/beans-web.xml]>
+2015-02-16 21:44:15,977 INFO [org.springframework.beans.factory.xml.XmlBeanDefinitionReader] - <Loading XML bean definitions from class path resource [Beans.xml]>
+2015-02-16 21:44:16,188 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6784780b: defining beans [good1,good2,good3,good4,ctg1,ctg2,ctg3,WH1,maxNum,freq,warName,catMax,genericBean]; root of factory hierarchy>
+2015-02-16 21:44:16,407 INFO [impls.Category] - <Category is created>
+2015-02-16 21:44:16,443 INFO [impls.Category] - <Category is created>
+2015-02-16 21:44:16,444 INFO [impls.Category] - <Category is created>
+2015-02-16 21:44:16,479 INFO [ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumElFactory] - <Factory ref isReference Class Name: ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumEl
+Type: ref
+Content: defs://max-num-el
+Type: num
+Content: 50
+>
+2015-02-16 21:44:16,480 INFO [ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumElFactory] - <Type: ref
+Content: defs://max-num-el
+Type: num
+Content: 50
+>
+2015-02-16 21:44:16,480 INFO [ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumEl] - <Ref Freq is createdReference Class Name: ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumEl
+Type: ref
+Content: defs://max-num-el
+>
+2015-02-16 21:44:16,480 INFO [ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumElFactory] - <Factory ref isReference Class Name: ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumEl
+Type: ref
+Content: defs://max-num-el
+Type: num
+Content: 50
+>
+2015-02-16 21:44:16,480 INFO [ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumElFactory] - <Type: ref
+Content: defs://max-num-el
+Type: num
+Content: 50
+>
+2015-02-16 21:44:16,483 INFO [ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumElFactory] - <Factory ref isReference Class Name: ru.vyrostkoolga.j2eelec2.lec3.jndi.Frequency
+Type: ref
+Content: defs://frequency-one
+Type: num
+Content: 5
+>
+2015-02-16 21:44:16,484 INFO [ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumElFactory] - <Type: ref
+Content: defs://frequency-one
+Type: num
+Content: 5
+>
+2015-02-16 21:44:16,484 INFO [ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumEl] - <Ref Freq is createdReference Class Name: ru.vyrostkoolga.j2eelec2.lec3.jndi.Frequency
+Type: ref
+Content: defs://frequency-one
+>
+2015-02-16 21:44:16,484 INFO [ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumElFactory] - <Factory ref isReference Class Name: ru.vyrostkoolga.j2eelec2.lec3.jndi.Frequency
+Type: ref
+Content: defs://frequency-one
+Type: num
+Content: 5
+>
+2015-02-16 21:44:16,484 INFO [ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumElFactory] - <Type: ref
+Content: defs://frequency-one
+Type: num
+Content: 5
+>
+2015-02-16 21:44:16,486 INFO [ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumElFactory] - <Factory ref isReference Class Name: ru.vyrostkoolga.j2eelec2.lec3.jndi.WName
+Type: ref
+Content: defs://w-name-one
+Type: name
+Content: 134567
+>
+2015-02-16 21:44:16,487 INFO [ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumElFactory] - <Type: ref
+Content: defs://w-name-one
+Type: name
+Content: 134567
+>
+2015-02-16 21:44:16,487 INFO [ru.vyrostkoolga.j2eelec2.lec3.jndi.WName] - <Ref WName is createdReference Class Name: ru.vyrostkoolga.j2eelec2.lec3.jndi.WName
+Type: ref
+Content: defs://w-name-one
+>
+2015-02-16 21:44:16,490 INFO [ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumElFactory] - <Factory ref isReference Class Name: ru.vyrostkoolga.j2eelec2.lec3.jndi.WName
+Type: ref
+Content: defs://w-name-one
+Type: name
+Content: 134567
+>
+2015-02-16 21:44:16,490 INFO [ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumElFactory] - <Type: ref
+Content: defs://w-name-one
+Type: name
+Content: 134567
+>
+2015-02-16 21:44:16,492 INFO [ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumElFactory] - <Factory ref isReference Class Name: ru.vyrostkoolga.j2eelec2.lec3.jndi.CtgMax
+Type: ref
+Content: defs://ctg-max-one
+Type: num
+Content: 10
+>
+2015-02-16 21:44:16,493 INFO [ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumElFactory] - <Type: ref
+Content: defs://ctg-max-one
+Type: num
+Content: 10
+>
+2015-02-16 21:44:16,493 INFO [ru.vyrostkoolga.j2eelec2.lec3.jndi.CtgMax] - <Ref CtgMax is createdReference Class Name: ru.vyrostkoolga.j2eelec2.lec3.jndi.CtgMax
+Type: ref
+Content: defs://ctg-max-one
+>
+2015-02-16 21:44:16,493 INFO [ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumElFactory] - <Factory ref isReference Class Name: ru.vyrostkoolga.j2eelec2.lec3.jndi.CtgMax
+Type: ref
+Content: defs://ctg-max-one
+Type: num
+Content: 10
+>
+2015-02-16 21:44:16,493 INFO [ru.vyrostkoolga.j2eelec2.lec3.jndi.MaxNumElFactory] - <Type: ref
+Content: defs://ctg-max-one
+Type: num
+Content: 10
+>
+2015-02-16 21:44:16,499 INFO [ru.vyrostkoolga.j2eelec2.lec3.GenericBean] - <MaxNumEl is created>
+2015-02-16 21:44:16,499 INFO [ru.vyrostkoolga.j2eelec2.lec3.GenericBean] - <Frequency is created>
+2015-02-16 21:44:16,499 INFO [ru.vyrostkoolga.j2eelec2.lec3.GenericBean] - <WName is created>
+2015-02-16 21:44:16,499 INFO [ru.vyrostkoolga.j2eelec2.lec3.GenericBean] - <CtgMax is created>
+2015-02-16 21:44:16,513 INFO [org.springframework.web.context.ContextLoader] - <Root WebApplicationContext: initialization completed in 1101 ms>
+2015-02-16 21:46:03,448 INFO [org.springframework.web.context.support.XmlWebApplicationContext] - <Closing Root WebApplicationContext: startup date [Mon Feb 16 21:44:15 PST 2015]; root of context hierarchy>
+2015-02-16 21:46:03,450 INFO [org.springframework.beans.factory.support.DefaultListableBeanFactory] - <Destroying singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@6784780b: defining beans [good1,good2,good3,good4,ctg1,ctg2,ctg3,WH1,maxNum,freq,warName,catMax,genericBean]; root of factory hierarchy>

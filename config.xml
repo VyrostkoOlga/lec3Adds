@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<domain xmlns="http://xmlns.oracle.com/weblogic/domain" xmlns:sec="http://xmlns.oracle.com/weblogic/security" xmlns:wls="http://xmlns.oracle.com/weblogic/security/wls" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.oracle.com/weblogic/security/xacml http://xmlns.oracle.com/weblogic/security/xacml/1.0/xacml.xsd http://xmlns.oracle.com/weblogic/security/providers/passwordvalidator http://xmlns.oracle.com/weblogic/security/providers/passwordvalidator/1.0/passwordvalidator.xsd http://xmlns.oracle.com/weblogic/domain http://xmlns.oracle.com/weblogic/1.0/domain.xsd http://xmlns.oracle.com/weblogic/security http://xmlns.oracle.com/weblogic/1.0/security.xsd http://xmlns.oracle.com/weblogic/security/wls http://xmlns.oracle.com/weblogic/security/wls/1.0/wls.xsd">
+  <name>base_domain</name>
+  <domain-version>10.3.6.0</domain-version>
+  <security-configuration>
+    <name>base_domain</name>
+    <realm>
+      <sec:authentication-provider xsi:type="wls:default-authenticatorType"></sec:authentication-provider>
+      <sec:authentication-provider xsi:type="wls:default-identity-asserterType">
+        <sec:active-type>AuthenticatedUser</sec:active-type>
+      </sec:authentication-provider>
+      <sec:role-mapper xmlns:xac="http://xmlns.oracle.com/weblogic/security/xacml" xsi:type="xac:xacml-role-mapperType"></sec:role-mapper>
+      <sec:authorizer xmlns:xac="http://xmlns.oracle.com/weblogic/security/xacml" xsi:type="xac:xacml-authorizerType"></sec:authorizer>
+      <sec:adjudicator xsi:type="wls:default-adjudicatorType"></sec:adjudicator>
+      <sec:credential-mapper xsi:type="wls:default-credential-mapperType"></sec:credential-mapper>
+      <sec:cert-path-provider xsi:type="wls:web-logic-cert-path-providerType"></sec:cert-path-provider>
+      <sec:cert-path-builder>WebLogicCertPathProvider</sec:cert-path-builder>
+      <sec:name>myrealm</sec:name>
+      <sec:password-validator xmlns:pas="http://xmlns.oracle.com/weblogic/security/providers/passwordvalidator" xsi:type="pas:system-password-validatorType">
+        <sec:name>SystemPasswordValidator</sec:name>
+        <pas:min-password-length>8</pas:min-password-length>
+        <pas:min-numeric-or-special-characters>1</pas:min-numeric-or-special-characters>
+      </sec:password-validator>
+    </realm>
+    <default-realm>myrealm</default-realm>
+    <credential-encrypted>{AES}BGK400onx6rwkpFo2Rh0tw4fs88WvOeS/D7kSDBLcm0YNqijeYHlP/vAHD9fr6vsV3bb4fbwc7tL+mWGGb/lFo/Q9k4Fu+OcWRufJkgEoWdk/4ogofeFc69CSoEn6dxq</credential-encrypted>
+    <node-manager-username>vyrostkoolga@gmail.com</node-manager-username>
+    <node-manager-password-encrypted>{AES}ttUewtwEFnzfykOc1SBsVMok2I9PJir7mvDUolMbHes=</node-manager-password-encrypted>
+  </security-configuration>
+  <server>
+    <name>AdminServer</name>
+    <ssl>
+      <enabled>false</enabled>
+    </ssl>
+    <listen-address>127.0.0.1</listen-address>
+    <data-source>
+      <rmi-jdbc-security xsi:nil="true"></rmi-jdbc-security>
+    </data-source>
+  </server>
+  <embedded-ldap>
+    <name>base_domain</name>
+    <credential-encrypted>{AES}CLjjayzadWXfjIvLOlfugKYoND6DQ6u7fspXTcIQNjvdX4Iwkr4rV4SSz48sHZ21</credential-encrypted>
+  </embedded-ldap>
+  <configuration-version>10.3.6.0</configuration-version>
+  <app-deployment>
+    <name>lec2-ear-0</name>
+    <target>AdminServer</target>
+    <module-type>ear</module-type>
+    <source-path>/Users/OlgaVyrostko/GitHub/j2eeLec2/lec2-ear/target/lec2-ear-0.0.1-SNAPSHOT.ear</source-path>
+    <security-dd-model>DDOnly</security-dd-model>
+  </app-deployment>
+  <foreign-jndi-provider>
+    <name>cfg</name>
+    <initial-context-factory>com.sun.jndi.fscontext.RefFSContextFactory</initial-context-factory>
+    <provider-url>file:/Users/OlgaVyrostko/GitHub/lec3Adds</provider-url>
+    <foreign-jndi-link>
+      <name>Frequency</name>
+      <local-jndi-name>cfg/Frequency</local-jndi-name>
+      <remote-jndi-name>frequency</remote-jndi-name>
+    </foreign-jndi-link>
+    <foreign-jndi-link>
+        <name>MaxNumEl</name>
+        <local-jndi-name>cfg/MaxNumEl</local-jndi-name>
+        <remote-jndi-name>maxNumEl</remote-jndi-name>
+    </foreign-jndi-link>
+    <foreign-jndi-link>
+        <name>WName</name>
+        <local-jndi-name>cfg/WName</local-jndi-name>
+        <remote-jndi-name>wName</remote-jndi-name>
+    </foreign-jndi-link>
+    <foreign-jndi-link>
+        <name>CtgMax</name>
+        <local-jndi-name>cfg/CtgMax</local-jndi-name>
+        <remote-jndi-name>ctgMax</remote-jndi-name>
+    </foreign-jndi-link>
+    </foreign-jndi-provider>
+  <admin-server-name>AdminServer</admin-server-name>
+</domain>
